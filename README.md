@@ -10,7 +10,7 @@ There were various reasons, but it burns down to these:
 * Didn't want to always uninstall shitty apps
 * Wanted to make my programming skills better
 * Curiosity
-* Ẅanted to fvck up my Windows
+* Wanted to fvck up my Windows
 
 ## Licensing
 This work was licensed under GNU GPL v3 licence, but nowadays I don't really care what happens to it... Feel free to fork it, pick up the development or whatever... 
