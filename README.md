@@ -1,9 +1,9 @@
 # UC Uninstaller (discontinued)
 ## What it is?
-An old project of mine, abandoned due to lack of time and not using Windows anymore...
+An old project of mine, abandoned due to lack of time and not using Windows anymore... Written in C# as my little pet project in high school. Also uses SQLite database.
 
 ## What does it do?
-Mostly PC cleaning... The app searches registry, detect potencionally unwanted apps and provides the means to (silently) uninstall them. There was an server backend that was used to create new database and such, but no longer working... Also uses SQLite database.
+Mostly PC cleaning... The app searches registry, detect potencionally unwanted apps and provides the means to (silently) uninstall them. There was an server backend that was used to create new database and such, but no longer working... 
 
 ## Why was it created?
 There were various reasons, but it burns down to these:
