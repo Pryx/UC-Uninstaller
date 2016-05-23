@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{44196563-E369-451B-8909-2B99F5C3FAC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E} = {76445734-6AC3-42A4-BC41-3CF6D02FBA2E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UC Uninstaller", "UC Uninstaller\UC Uninstaller.csproj", "{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E} = {76445734-6AC3-42A4-BC41-3CF6D02FBA2E}
+		{71932E42-17A1-409C-9658-4673BE86B607} = {71932E42-17A1-409C-9658-4673BE86B607}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crash report", "crash report\Crash report.csproj", "{71932E42-17A1-409C-9658-4673BE86B607}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E} = {76445734-6AC3-42A4-BC41-3CF6D02FBA2E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Languages", "language\Languages.csproj", "{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pryx.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = language\\Languages.csproj
+		SccProjectName0 = language
+		SccAuxPath0 = https://pryx.visualstudio.com/defaultcollection
+		SccLocalPath0 = language
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = crash\u0020report\\Crash\u0020report.csproj
+		SccProjectName1 = crash\u0020report
+		SccAuxPath1 = https://pryx.visualstudio.com/defaultcollection
+		SccLocalPath1 = crash\u0020report
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Core\\Core.csproj
+		SccProjectName2 = Core
+		SccAuxPath2 = https://pryx.visualstudio.com/defaultcollection
+		SccLocalPath2 = Core
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = UC\u0020Uninstaller\\UC\u0020Uninstaller.csproj
+		SccProjectName3 = UC\u0020Uninstaller
+		SccAuxPath3 = https://pryx.visualstudio.com/defaultcollection
+		SccLocalPath3 = UC\u0020Uninstaller
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Debug|x86.ActiveCfg = Debug|x86
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Debug|x86.Build.0 = Debug|x86
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Release|Mixed Platforms.Build.0 = Release|x86
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Release|x86.ActiveCfg = Release|x86
+		{44196563-E369-451B-8909-2B99F5C3FAC4}.Release|x86.Build.0 = Release|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Debug|x86.ActiveCfg = Debug|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Debug|x86.Build.0 = Debug|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Release|x86.ActiveCfg = Release|x86
+		{6DCFB4C3-AAAB-438A-8C72-D63F6E2D90B3}.Release|x86.Build.0 = Release|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71932E42-17A1-409C-9658-4673BE86B607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71932E42-17A1-409C-9658-4673BE86B607}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Debug|x86.ActiveCfg = Debug|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Debug|x86.Build.0 = Debug|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71932E42-17A1-409C-9658-4673BE86B607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71932E42-17A1-409C-9658-4673BE86B607}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Release|Mixed Platforms.Build.0 = Release|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Release|x86.ActiveCfg = Release|x86
+		{71932E42-17A1-409C-9658-4673BE86B607}.Release|x86.Build.0 = Release|x86
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Debug|x86.ActiveCfg = Debug|x86
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Debug|x86.Build.0 = Debug|x86
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Release|x86.ActiveCfg = Release|x86
+		{76445734-6AC3-42A4-BC41-3CF6D02FBA2E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

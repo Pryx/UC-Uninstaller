@@ -1,0 +1,8 @@
+﻿<NavigationWindow x:Class="Uninstaller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:Uninstaller.Properties"
+        Title="UC Uninstaller" MinWidth="500" MinHeight="600" 
+        Style="{DynamicResource LightTheme}"
+        Source="/main.xaml" Closing="NavigationWindow_Closing" Name="navwindow" Icon="main.ico" Loaded="navwindow_Loaded" KeyDown="navwindow_KeyDown" Navigating="navwindow_Navigating" 
+         />

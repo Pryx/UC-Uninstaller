@@ -1,0 +1,45 @@
+﻿<Page x:Class="Uninstaller.main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="500" Loaded="Page_Loaded" KeyDown="Page_KeyDown"
+      FocusManager.IsFocusScope="True" FocusVisualStyle="{x:Null}">
+
+    <Grid x:Name="maingrid">
+        <Button x:Name="uninstall" Content="Uninstall now!" Margin="0,0,0,46" Style="{StaticResource UninstallButton}" Width="200" FontSize="16" Click="Button_Click" Height="71" VerticalAlignment="Bottom" IsEnabled="False" FontFamily="Fonts/#Open Sans Semibold" FontWeight="Bold"/>
+        <Button x:Name="settings" Margin="0,0,32,0" Style="{DynamicResource settings}" HorizontalAlignment="Right" Width="30" Height="30" VerticalAlignment="Top" Click="settings_Click">
+            <Image Source="images/settings.png" Width="25" Height="25"/>
+        </Button>
+        <Button x:Name="info" Margin="0" Style="{DynamicResource settings}" HorizontalAlignment="Right" Width="30" Height="30" VerticalAlignment="Top" Click="info_Click">
+            <Image Source="images/info.png"/>
+        </Button>
+        <Grid Margin="32,32,32,0" Height="27" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="22"/>
+                <ColumnDefinition Width="0" Name="helper"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Name" Name="namelabel" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" MouseDown="namelabel_MouseDown" FontWeight="Bold"/>
+            <Label Content="•" x:Name="selectedlabel" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Width="20" FontWeight="ExtraBold" MouseDown="selectedlabel_MouseDown" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="25" Margin="2,0,0,0"/>
+        </Grid>
+        <Grid Margin="32,64,32,122">
+            <ScrollViewer Name="scrollbar" VerticalScrollBarVisibility="Auto" PanningMode="VerticalOnly" FocusVisualStyle="{x:Null}" LayoutUpdated="scrollbar_LayoutUpdated" >
+                <Grid Name="results">
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+
+        <Button Name="advancedbutton" Margin="0,0,0,13" Style="{DynamicResource settings}" Click="advanced_Click" Width="120" Height="30" VerticalAlignment="Bottom" FontFamily="Fonts/#Open Sans" FontSize="13">
+            <TextBlock Name="advancedmode">Advanced mode</TextBlock>
+        </Button>
+        <Button  Name="feedback" Content="Send feedback" Style="{DynamicResource settings}" HorizontalAlignment="Right" Margin="0,0,10,13" Click="feedback_Click" Height="30" VerticalAlignment="Bottom" Visibility="Hidden" Padding="5" FontFamily="Fonts/#Open Sans" FontSize="12" />
+        <Button Name="checkall" Tag="" HorizontalAlignment="Right" Margin="0,0,32,93" Width="24" Style="{DynamicResource settings}" Click="Button_Click_1" FontFamily="Magneto" FontSize="20" Height="24" VerticalAlignment="Bottom">
+            <Path Fill="Black" FocusVisualStyle="{x:Null}" Tag="semichecked" Name="CheckMark" SnapsToDevicePixels="False"  Stroke="Black" StrokeThickness="1" Data="M 1,0 1,7 7,7 7,0.5 1,0.5"/>
+        </Button>
+        <TextBox Visibility="Hidden" Name="search" Height="23" Margin="32,0,0,121" Width="Auto" TextWrapping="Wrap" VerticalAlignment="Bottom" BorderBrush="LightGray" IsUndoEnabled="False" MaxLines="1" MinLines="1" HorizontalAlignment="Left" TextChanged="search_TextChanged" />
+    </Grid>
+</Page>

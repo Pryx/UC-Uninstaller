@@ -1,0 +1,12 @@
+﻿<Window x:Class="Uninstaller.uninstall"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Uninstalling" Height="100" Width="400"
+         ResizeMode="NoResize" WindowStartupLocation="CenterOwner"
+        Style="{DynamicResource dialog}" Loaded="Window_Loaded" Icon="main.ico">
+    <Grid>
+        <ProgressBar Margin="10,0,10,10" Name="progress" Height="21" VerticalAlignment="Bottom"/>
+        <Label Content="Name" Name="progname" HorizontalAlignment="Left" Margin="10,0,0,36" Height="26" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

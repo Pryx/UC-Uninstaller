@@ -1,0 +1,15 @@
+﻿<Window x:Class="Uninstaller.updater"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Downloading updates..." Height="115" Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" Loaded="Window_Loaded" Style="{DynamicResource dialog}" Icon="main.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ProgressBar Height="21" Margin="10,10,10,0" VerticalAlignment="Top" Name="progressBar1" />
+        <Button Content="Cancel" Margin="0,38,10,0" Click="button1_Click" Style="{DynamicResource cancel}" HorizontalAlignment="Right" Width="84" Height="25" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Page x:Class="Uninstaller.settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="500" Loaded="Page_Loaded">
+    <Grid>
+        <Border BorderBrush="#FFB0B0B0" BorderThickness="1" Height="69" Margin="10,52,10,0" VerticalAlignment="Top"/>
+        <Label Content="Basic" x:Name="basic" HorizontalAlignment="Left" Margin="15,35,0,0" VerticalAlignment="Top" FontSize="15" Background="White"/>
+        <Border BorderBrush="#FFB0B0B0" BorderThickness="1" Height="58" Margin="10,143,10,0" VerticalAlignment="Top"/>
+        <Button Margin="0" Click="Button_Click" HorizontalAlignment="Left" Width="30" Height="30" VerticalAlignment="Top" Style="{DynamicResource settings}" >
+            <Image Source="images/back.png"/>
+        </Button>
+        <CheckBox Content="Automatically update on startup" HorizontalAlignment="Left" Margin="20,64,0,0" VerticalAlignment="Top" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" FontSize="15" x:Name="update" Checked="settings_updated" Unchecked="settings_updated"/>
+        <ComboBox HorizontalAlignment="Left" SelectedValuePath="Tag" x:Name="langselect" Margin="117,85,0,0" VerticalAlignment="Top" Width="120" Height="25" MaxDropDownHeight="264" >
+            <ComboBoxItem Content="Čeština" Tag="cs" Selected="ComboBoxItem_Selected"/>
+            <ComboBoxItem Content="English" Tag="en" Selected="ComboBoxItem_Selected_1"/>
+        </ComboBox>
+        <Label Content="Language" x:Name="lang" HorizontalAlignment="Left" Margin="17,80,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <CheckBox Content="Automatically start in advanced mode" HorizontalAlignment="Left" Margin="20,156,0,0" VerticalAlignment="Top" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" FontSize="15" x:Name="autostart" Checked="settings_updated" Unchecked="settings_updated"/>
+        <CheckBox Content="Disable silent uninstall (use this when uninstallation fails)" HorizontalAlignment="Left" Margin="20,175,0,0" VerticalAlignment="Top" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" FontSize="15" x:Name="disable_silent" Checked="settings_updated" Unchecked="settings_updated"/>
+        <Label Content="Advanced" x:Name="adv" HorizontalAlignment="Left" Margin="15,126,0,0" VerticalAlignment="Top" FontSize="15" Background="White"/>
+        <Border BorderBrush="#FFB0B0B0" BorderThickness="1" Height="72" Margin="10,226,10,0" VerticalAlignment="Top"/>
+        <Label Name="bautoclose" Content="Browser closing" HorizontalAlignment="Left" Margin="15,209,0,0" VerticalAlignment="Top" FontSize="15" Background="White"/>
+        <CheckBox Content="Remember" Name="remember" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" Margin="17,244,0,0" FontSize="15" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <RadioButton Name="bclose" Content="Close" IsEnabled="False" HorizontalAlignment="Left" Margin="20,269,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" Checked="settings_updated" GroupName="close"/>
+        <RadioButton Name="bdontclose" IsEnabled="False" Content="Do not close" HorizontalAlignment="Left" Margin="188,269,0,0" VerticalAlignment="Top" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" FontSize="15" Checked="settings_updated" GroupName="close"/>
+        <Border BorderBrush="#FFB0B0B0" BorderThickness="1" Height="72" Margin="10,329,10,0" VerticalAlignment="Top"/>
+        <Label x:Name="registryclean" Content="Clean" HorizontalAlignment="Left" Margin="15,312,0,0" VerticalAlignment="Top" FontSize="15" Background="White"/>
+        <CheckBox Content="Remember" x:Name="rremember" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" Margin="17,347,0,0" FontSize="15" Checked="CheckBox_Checked1" Unchecked="CheckBox_Unchecked1" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        <RadioButton x:Name="rclean" Content="Clean" IsEnabled="False" HorizontalAlignment="Left" Margin="20,372,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" Checked="settings_updated" GroupName="clean"/>
+        <RadioButton x:Name="dontrclean" IsEnabled="False" Content="Do not clean" HorizontalAlignment="Left" Margin="188,372,0,0" VerticalAlignment="Top" FontFamily="/UC Uninstaller;component/fonts/#Open Sans" FontSize="15" Checked="settings_updated" GroupName="clean"/>
+    </Grid>
+</Page>
